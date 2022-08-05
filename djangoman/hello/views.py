@@ -6,7 +6,7 @@ def index(request):
     return render(request, "hello/index.html")
 
 def pisa(request):
-    return HttpResponse("<h1>TUT TAKOGO NET POKA</h1>")
+    return HttpResponse("<h1>Ой что-то мы засиделись,братцы, не пора ли нам прогуляться? Русь молодая, силы не меренно!Дайте коня мне да добрый  меч</h1>")
 
 
 def cocki(request):
