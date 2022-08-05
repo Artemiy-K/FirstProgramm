@@ -3,7 +3,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return render(request, "templates/hello/index.html")
+    return render(request, "hello/index.html")
 
 def pisa(request):
     return HttpResponse("<h1>TUT TAKOGO NET POKA</h1>")
