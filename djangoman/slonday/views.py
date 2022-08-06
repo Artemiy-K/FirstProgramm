@@ -24,3 +24,8 @@ def index(request):
         "slday": f
     })
 
+
+def weekday(request):
+    now = datetime.datetime.today().weekday()
+
+
