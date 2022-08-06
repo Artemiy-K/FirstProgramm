@@ -15,6 +15,7 @@ def index(request):
         "slday": s
     })"""
     if now.day == 12 and now.month == 8:
+        print(now.day)
         f = True
     else:
         f = False
