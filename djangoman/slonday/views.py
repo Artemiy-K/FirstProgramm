@@ -15,7 +15,6 @@ def index(request):
         "slday": s
     })"""
     if now.day == 12 and now.month == 8:
-        print(now.day)
         f = True
     else:
         f = False
@@ -27,5 +26,9 @@ def index(request):
 
 def weekday(request):
     now = datetime.datetime.today().weekday()
+
+    return render(request, "slonday/index2.html", {
+        "day": now
+    })
 
 
