@@ -25,7 +25,7 @@ def index(request):
 
 
 def weekday(request):
-    now = datetime.datetime.today().weekday()
+    now = datetime.datetime.today().weekday()+1
 
     return render(request, "slonday/index2.html", {
         "day": now

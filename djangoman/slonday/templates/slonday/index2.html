@@ -5,7 +5,7 @@
     <title>Ты что Разбийник?</title>
     <link rel="stylesheet" href="{% static 'slonday/style2.css' %}">
 </head>
-<body style="background: url(back.jpg)">
+<body>
 
     {% if day == 1 %}
         <h1>Сегодня Понеділок!</h1>
@@ -24,6 +24,22 @@
     {% endif %}
 
 <h3>Время:</h3>
+
+    {% if day == 1 %}
+        <h1>Время делать деньги!</h1>
+    {% elif day == 2 %}
+        <h1>Время в Тайвани 15:00!</h1>
+    {% elif day == 3 %}
+        <h1>Здравствуй, солнце облаках!Здравствуй юность в сапогах</h1>
+    {% elif day == 4 %}
+        <h1>Время шаурмы!</h1>
+    {% elif day == 5 %}
+        <h1>Время бухать!</h1>
+    {% elif day == 6 %}
+        <h1>Не время бухать!</h1>
+    {% elif day == 7 %}
+        <h1>2 пальца в рот и на завод!</h1>
+    {% endif %}
 
 
 
