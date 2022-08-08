@@ -5,7 +5,7 @@
     <title>Ты что Разбийник?</title>
     <link rel="stylesheet" href="{% static 'slonday/style2.css' %}">
 </head>
-<body style="background: url(back.png)">
+<body style="background: url({% static 'slonday/back.png' %});background-size: cover">
 
     {% if day == 1 %}
         <h1>Сегодня Понеділок!</h1>
