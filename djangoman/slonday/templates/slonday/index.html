@@ -9,9 +9,10 @@
 
     {% if slday %}
         <h1>Слоны сегодня едят!</h1>
-        <img src="{% static 'slonday/gr_sl.jpg' %}">
+        <img src="{% static 'slonday/sm_sl.jpg' %}"; style="height: 400px">
     {% else %}
         <h1>Слоны сегодня не едят.</h1>
+        <img src="{% static 'slonday/gr_sl.jpg' %}"; style="height: 300px">
     {% endif %}
 
 

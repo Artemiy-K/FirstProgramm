@@ -20,7 +20,7 @@ def index(request):
         f = False
     return render(request, "slonday/index.html", {
 
-        "slday": 12
+        "slday": f
     })
 
 
