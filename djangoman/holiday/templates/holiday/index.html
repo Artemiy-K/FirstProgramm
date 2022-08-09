@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,9 +7,17 @@
 </head>
 
 <br>
-<h2>{{ h_date }}</h2>
-<h1>{{ h_name }}</h1>
+<h2 style="text-align: center">{{ h_date }}</h2>
+<h1 style="text-align: center; color: cornflowerblue;font-family: Ravie">{{ h_name }}</h1>
 
+    {% if '18122022' == '18122022' %}
+        <img src="{% static 'holiday/photo1.jpg' %}"; style="height: 300px">
+        <img src="{% static 'holiday/photo2.jpg' %}"; style="height: 300px">
+        <img src="{% static 'holiday/photo3.jpg' %}"; style="height: 300px">
+        <img src="{% static 'holiday/photo4.jpg' %}"; style="height: 300px">
+        <img src="{% static 'holiday/photo6.jpg' %}"; style="height: 300px;text-align: center">
+        <h1 style="font-family: ObelixPro">С днем рождения ледженда!</h1>
+    {% endif %}
 
 
 
