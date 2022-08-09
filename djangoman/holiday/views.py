@@ -17,7 +17,11 @@ def index(request):
     date = day + month + year
 
     if date in hol_sl:
-        s = hol_sl[date]
+        s = hol_sl[date][0]
     else:
         s = "Бухич отменяется... Праздника не будет:("
-    return HttpResponse(s)
+    date = day + "." + month + "." + year
+    return render(request, "holiday/index.html",{
+        "h_name":s,
+        "h_date":date
+    })
