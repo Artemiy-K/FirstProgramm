@@ -5,7 +5,7 @@ from .models import News
 # Create your views here.
 
 def index(request):
-    news = News.objects.all()
+    news = News.objects.order_by("-created_at")
     return render(request, 'news/index.html', {
         'news':news,
         'title': 'список новостей'
