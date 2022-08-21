@@ -10,3 +10,5 @@ def index(request):
         'news':news,
         'title': 'список новостей'
     })
+
+    return render(request, template_name='news/index.html', context=context)
